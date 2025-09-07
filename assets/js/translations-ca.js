@@ -44,5 +44,5 @@ const translationsCA = {
     "sustainable_architecture_desc": "Dissenyem edificis energèticament eficients que minimitzen l'impacte ambiental i maximitzen el benestar dels seus ocupants.",
     
     // T
-    "title": "Helios by HTML5 UP"
+    "title": "ARKITEC3"
 };

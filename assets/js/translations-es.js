@@ -44,5 +44,5 @@ const translationsES = {
     "sustainable_architecture_desc": "Diseñamos edificios energéticamente eficientes que minimizan el impacto ambiental y maximizan el bienestar de sus ocupantes.",
     
     // T
-    "title": "Helios by HTML5 UP"
+    "title": "ARKITEC3"
 };
