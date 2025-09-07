@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Helios by HTML5 UP</title>
+		<title data-i18n="title">Helios by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Sistema de Multilenguaje -->
+		<script src="assets/js/translations-es.js"></script>
+		<script src="assets/js/translations-ca.js"></script>
+		<script src="assets/js/i18n.js"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -19,19 +23,19 @@
 								<h1> 
 									<a href="index.html" id="logo"><img src="images/logo.png" alt="ARKITEC3"></a></h1>
 								<hr />
-								<p>Diseño Arquitectónico Innovador y Sostenible</p>
+								<p data-i18n="innovative_design">Diseño Arquitectónico Innovador y Sostenible</p>
 							</header>
 							<footer>
-								<a href="#banner" class="button circled scrolly">Start</a>
+								<a href="#banner" class="button circled scrolly" data-i18n="start_button">Start</a>
 							</footer>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="#proyectos" class="scrolly">Proyectos</a></li>
-								<li><a href="#contact" class="scrolly">Contacto</a></li>
+							<li><a href="index.html" data-i18n="home">Home</a></li>
+							<li><a href="#proyectos" class="scrolly" data-i18n="nav_projects">Proyectos</a></li>
+							<li><a href="#contact" class="scrolly" data-i18n="nav_contact">Contacto</a></li>
 							</ul>
 						</nav>
 					
@@ -47,8 +51,8 @@
 			<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h2 id="proyectos">Nuestros <strong>Proyectos</strong> Destacados.</h2>
-						<p>
+						<h2 id="proyectos" data-i18n-html="our_projects">Nuestros <strong>Proyectos</strong> Destacados.</h2>
+						<p data-i18n="our_projects_desc">
 							Transformamos espacios con diseños vanguardistas que combinan estética, funcionalidad y sostenibilidad. Creamos arquitectura que perdura y respeta el entorno. Cada proyecto es un testimonio de nuestra pasión por la excelencia arquitectónica y la innovación sostenible.
 						</p>
 					</header>
@@ -147,15 +151,15 @@
 					<article id="main" class="container special">
 						<img class="image featured" src="images/abstract-architecture-on-white-background-vector.jpg" alt="" />
 						<header>
-							<h2>Sobre <strong>Nosotros</strong>: Visión y Experiencia</h2>
+							<h2 data-i18n-html="about_us_subtitle">Sobre <strong>Nosotros</strong>: Visión y Experiencia</h2>
 						</header>
-						<p>
+						<p data-i18n="about_us_text">
 							En ARKITEC3, combinamos más de cuatro décadas de experiencia con una visión innovadora que desafía los límites de la arquitectura tradicional.
 							<br>
 							Creemos firmemente que la arquitectura es una herramienta poderosa para transformar positivamente nuestro entorno social y natural. Cada proyecto que emprendemos es una oportunidad única para contribuir de manera significativa a nuestras comunidades.
 						</p>
 						<footer>
-							<a href="#contact"  class="scrolly button">Contact</a>
+							<a href="#contact"  class="scrolly button" data-i18n="contact_button">Contact</a>
 						</footer>
 					</article>
 
@@ -166,36 +170,36 @@
 
 					<section id="features" class="container special">
 						<header>
-							<h2>Servicios de Arquitectura y Diseño</h2>
-							<p>Ofrecemos soluciones integrales desde la concepción inicial hasta la supervisión de obra, garantizando la excelencia en cada etapa.</p>
+							<h2 data-i18n="services">Servicios de Arquitectura y Diseño</h2>
+							<p data-i18n="services_desc">Ofrecemos soluciones integrales desde la concepción inicial hasta la supervisión de obra, garantizando la excelencia en cada etapa.</p>
 						</header>
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
 								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
 								<header>
-									<h3>Diseño Arquitectónico</h3>
-								</header>
-								<p>
-									Creamos espacios únicos que equilibran estética, funcionalidad y sostenibilidad, adaptados perfectamente a sus necesidades y visión.
-								</p>
+								<h3 data-i18n="design_architectural">Diseño Arquitectónico</h3>
+							</header>
+							<p data-i18n="design_architectural_desc">
+								Creamos espacios únicos que equilibran estética, funcionalidad y sostenibilidad, adaptados perfectamente a sus necesidades y visión.
+							</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
 								<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 								<header>
-									<h3>Arquitectura Sostenible</h3>
-								</header>
-								<p>
-									Diseñamos edificios energéticamente eficientes que minimizan el impacto ambiental y maximizan el bienestar de sus ocupantes.
-								</p>
+								<h3 data-i18n="sustainable_architecture">Arquitectura Sostenible</h3>
+							</header>
+							<p data-i18n="sustainable_architecture_desc">
+								Diseñamos edificios energéticamente eficientes que minimizan el impacto ambiental y maximizan el bienestar de sus ocupantes.
+							</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
 								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
 								<header>
-									<h3>Rehabilitación y Restauración</h3>
-								</header>
-								<p>
-									Revitalizamos espacios existentes respetando su esencia histórica mientras los adaptamos a las necesidades contemporáneas.
-								</p>
+								<h3 data-i18n="rehabilitation_restoration">Rehabilitación y Restauración</h3>
+							</header>
+							<p data-i18n="rehabilitation_restoration_desc">
+								Revitalizamos espacios existentes respetando su esencia histórica mientras los adaptamos a las necesidades contemporáneas.
+							</p>
 							</article>
 						</div>
 					</section>
@@ -211,9 +215,9 @@
 								<!-- Contact -->
 									<section id="contact" class="contact">
 										<header>
-											<h3>Contacto y Solicitud de Presupuesto</h3>
-										</header>
-										<p>Contáctenos para programar una consulta inicial sin compromiso donde podamos conocer sus necesidades y explorar posibles soluciones.</p>
+								<h3 data-i18n="contact_budget">Contacto y Solicitud de Presupuesto</h3>
+							</header>
+							<p data-i18n="contact_description">Contáctenos para programar una consulta inicial sin compromiso donde podamos conocer sus necesidades y explorar posibles soluciones.</p>
 										<ul class="icons">
 											info@arkitec3.es
 										</ul>

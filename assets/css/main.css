@@ -3173,7 +3173,7 @@ h2 strong {
 
 #btnWhatsApp{
     position: fixed;
-    top: 40px;
+    top: 30px;
     right: 40px;
     height: 40px;
     width: 40px;
@@ -3184,4 +3184,11 @@ h2 strong {
     border-radius: 50%;
     cursor: pointer;
     z-index: 50;
+}
+
+@media (max-width: 768px) {
+	#btnWhatsApp{
+		top: 10px;
+		right: 20px;
+	}
 }
