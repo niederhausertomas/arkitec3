@@ -1,0 +1,13 @@
+{
+  "name": "arkitec3",
+  "version": "1.0.0",
+  "description": "Sitio web Arkitec3",
+  "scripts": {
+    "start": "live-server --port=8080 --open=/index.html",
+    "dev": "live-server --port=8080 --open=/index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+

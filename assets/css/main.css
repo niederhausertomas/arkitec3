@@ -1791,13 +1791,18 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image.featured {
+	.image.featured {
+		display: block;
+		width: 100%;
+		margin: 0 0 0 0;
+	}
+
+		.image.featured img {
 			display: block;
 			width: 100%;
 			height: 300px; /* Altura reducida */
 			object-fit: cover; /* Mantiene proporción sin deformar */
 			object-position: center; /* Centra la imagen */
-			margin: 0 0 0 0;
 		}
 
 		.image.left {
@@ -2208,7 +2213,8 @@ input, select, textarea {
 
 			#header header > p {
 				font-size: 1.25em;
-				margin: 0;
+				margin: 0;	
+				text-shadow: white 0 0 5px;
 			}
 
 		#header h1 {
@@ -2333,15 +2339,15 @@ input, select, textarea {
 					border-color: rgba(192, 192, 192, 0.35);
 				}
 
-				#nav > ul > li > a, #nav > ul > li > span {
-					display: block;
-					color: rgb(0, 0, 0);
-					text-shadow: white 0 0 20px;
-					font-weight: 600;
-					text-decoration: none;
-					border: 0;
-					outline: 0;
-				}
+			#nav > ul > li > a, #nav > ul > li > span {
+				display: block;
+				color: rgb(0, 0, 0);
+				text-shadow: white 0 0 5px;
+				font-weight: 600;
+				text-decoration: none;
+				border: 0;
+				outline: 0;
+			}
 
 				#nav > ul > li > ul {
 					display: none;
@@ -2605,9 +2611,21 @@ input, select, textarea {
 				position: relative;
 				left: -1em;
 				top: 0;
-				width: auto;
+				width: calc(100% + 2em);
 				margin-right: -2em;
 				margin-bottom: 3em;
+				height: 300px;
+				overflow: hidden;
+			}
+
+			.carousel article .image img {
+				width: 100%;
+				height: 300px;
+				display: block;
+				object-fit: cover;
+				object-position: center;
+				margin: 0;
+				padding: 0;
 			}
 
 			.carousel article p {
@@ -3137,9 +3155,22 @@ input, select, textarea {
 					margin: 0 0.5em 0 0;
 				}
 
-					.carousel article .image {
-						margin-bottom: 2em;
-					}
+				.carousel article .image {
+					margin-bottom: 2em;
+					width: calc(100% + 2em);
+					height: 250px;
+					overflow: hidden;
+				}
+
+				.carousel article .image img {
+					width: 100%;
+					height: 250px;
+					display: block;
+					object-fit: cover;
+					object-position: center;
+					margin: 0;
+					padding: 0;
+				}
 
 	}
 
@@ -3159,7 +3190,7 @@ h2 strong {
 
 #logo img {
 	width: 50%;
-	height: 50%;
+	height: 30%;
 	object-fit: contain;
 }
 
@@ -3176,6 +3207,41 @@ h2 strong {
     border-radius: 50%;
     cursor: pointer;
     z-index: 50;
+}
+
+/* Tablet/iPad specific styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	/* Header */
+	#header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 4em 0 2em 0;
+	}
+
+	#header:before {
+		display: none;
+	}
+
+	#header .inner {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	body.homepage #header {
+		height: auto;
+		min-height: 60vh;
+		padding: 5em 0 3em 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	body.homepage #header .inner {
+		display: block;
+		text-align: center;
+	}
 }
 
 @media (max-width: 768px) {
