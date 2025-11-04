@@ -41,37 +41,6 @@
 	// Scrolly.
 		$('.scrolly').scrolly();
 
-	// Nav.
-
-		// Desactivado: Menú móvil (hamburguesa) y panel.
-		// Si en el futuro se requiere reactivar, envolver este bloque en una condición de breakpoint.
-		if (false) {
-			$(
-				'<div id="navButton">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
-
-			$(
-				'<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					target: $body,
-					visibleClass: 'navPanel-visible'
-				});
-		}
-
 	// Carousels.
 		$('.carousel').each(function() {
 
